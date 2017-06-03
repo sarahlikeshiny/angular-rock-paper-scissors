@@ -9,13 +9,13 @@
   </head>
   <body ng-controller="MainCtrl as main">
     <div class="game">
-      <p>Player 1 chose: <span class="player1"></span></p>
-      <p>Player 2 chose: <span class="player2"></span></p>
-      <p class="result"></p>
+      <p>Player 1 chose: {{main.player1Choice}} <span class="player1"></span></p>
+      <p>Player 2 chose: {{main.player2Choice}}<span class="player2"></span></p>
+      <p class="result">{{main.winner}}</p>
       <ul>
         <li ng-repeat="choice in main.choices"><button ng-click="main.getChoice(choice)" class="choice">{{choice.option}}</button></li>
-      </ul>      
-      <button class="reset">reset</button>
+      </ul>
+      <button ng-click="main.reset()" class="reset">reset</button>
     </div>
   </body>
 </html>
