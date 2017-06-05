@@ -11,6 +11,12 @@ body {
 h1 {
   font-family: 'Oswald', sans-serif;
   font-size: 24px;
+  letter-spacing: 1px;
+}
+h2 {
+  font-family: 'Oswald', sans-serif;
+  font-size: 20px;
+  letter-spacing: 1px;
 }
 ul {
   text-align: center;
@@ -63,6 +69,7 @@ button:last-of-type {
   clear: left;
   margin-top: 20px;
   display: block;
+  border-radius: 4px;
 }
 
 button:hover {
