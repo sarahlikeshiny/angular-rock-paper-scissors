@@ -3,20 +3,21 @@
   <head>
     <meta charset="utf-8">
     <title>Angular Rock Paper Scissors</title>
+    <link href="https://fonts.googleapis.com/css?family=Karla|Oswald" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
     <script src="js/app.js" charset="utf-8"></script>
   </head>
   <body ng-controller="MainCtrl as main">
     <div class="game">
-      <p>Player 1 chose: {{main.player1Choice}} <span class="player1"></span></p>
-      <p>Player 2 chose: {{main.player2Choice}}<span class="player2"></span></p>
+        <h1>Let's Play Rock, Paper, Scissors!<br>Make your guess against the computer</h1>
+      <p>Player 1 chose: <span class="player1">{{main.player1Choice}} </span></p>
+      <p>Player 2 chose: <span class="player2">{{main.player2Choice}}</span></p>
       <p class="result">{{main.winner}}</p>
       <ul>
-        <li ng-repeat="choice in main.choices"><button ng-click="main.getChoice(choice)" class="choice">{{choice.option}}</button></li>
+        <li ng-repeat="choice in main.choices"><img ng-src="{{choice.image}}" ng-click="main.getChoice(choice)" class="choice"></li>
       </ul>
       <button ng-click="main.reset()" class="reset">reset</button>
     </div>
   </body>
 </html>
-<!-- ng-click, grab choice and run game logic display win lose tie.  -->

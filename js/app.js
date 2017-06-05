@@ -8,9 +8,9 @@ angular
 function MainCtrl() {
   const vm = this;
   vm.choices = [
-    {option: 'rock'},
-    {option: 'scissors'},
-    {option: 'paper'}
+    {option: 'rock', image: 'images/rock.jpg'},
+    {option: 'scissors', image: 'images/scissors.jpg'},
+    {option: 'paper', image: 'images/paper.jpg'}
   ];
   vm.player1Choice = '';
   vm.player2Choice = '';

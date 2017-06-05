@@ -1,5 +1,16 @@
+font-family: 'Oswald', sans-serif;
+font-family: 'Karla', sans-serif;
 * {
   box-sizing: border-box;
+}
+
+body {
+  font-family: 'Karla', sans-serif;
+  text-align: center;
+}
+h1 {
+  font-family: 'Oswald', sans-serif;
+  font-size: 24px;
 }
 ul {
   text-align: center;
@@ -11,14 +22,14 @@ li {
   margin-left: 10px;
   padding: 15px;
 }
-
-body {
-  font-family: 'Space Mono', monospace;
-  text-align: center;
+img {
+  width: 100px;
+  height: 100px;
+  border: 2px solid #f6201d;
 }
 
 button {
-  font-family: 'Space Mono', monospace;
+  font-family: 'Karla', sans-serif;
   background-color: white;
   border: 2px solid #f6201d;
   cursor: pointer;
@@ -26,14 +37,17 @@ button {
   transition: all 0.2s ease;
   padding: 6px 12px;
   outline: none !important;
+  font-size: 18px;
 }
 
 p {
   margin: 0 0 20px;
+  font-size: 18px;
 }
 
 p span {
-  font-weight: bold;
+  color: #f6201d;
+  text-transform: uppercase;
 }
 
 p.result  {
