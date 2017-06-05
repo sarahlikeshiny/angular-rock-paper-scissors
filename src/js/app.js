@@ -1,4 +1,3 @@
-console.log('js is connected - woo');
 
 angular
   .module('rpsApp', [])
@@ -8,9 +7,9 @@ angular
 function MainCtrl() {
   const vm = this;
   vm.choices = [
-    {option: 'rock', image: 'images/rock.jpg'},
-    {option: 'scissors', image: 'images/scissors.jpg'},
-    {option: 'paper', image: 'images/paper.jpg'}
+    {option: 'rock', image: 'src/images/rock.jpg'},
+    {option: 'scissors', image: 'src/images/scissors.jpg'},
+    {option: 'paper', image: 'src/images/paper.jpg'}
   ];
   vm.player1Choice = '';
   vm.player2Choice = '';
