@@ -15,31 +15,29 @@ describe('MainCtrl', () => {
     beforeEach(() => {
       $scope = $rootScope.$new();
       vm = $controller('MainCtrl', { $scope });
-      vm.choices = [{
+      choice = [{
         option: 'rock',
-        image: 'images/rock.jpg'
+        image: 'src/images/rock.jpg'
       }];
-      let player1Choice = 'rock';
-      let player2Choice = 'scissors';
     });
 
     it('checks tests run', () => {
       $scope.$digest();
 
-      expect(vm.choices.length).to.equal(1);
+      expect(choice.length).to.equal(1);
     });
 
-    it('findWinner', (player1Choice, player2Choice) => {
-
+    it('starts with empty varibales', () => {
       $scope.$digest();
-
-      expect(winner).to.equal('You Win');
+      expect(vm.player1Choice).to.equal('');
+      expect(vm.player2Choice).to.equal('');
+      expect(vm.winner).to.equal('');
     });
 
+    it('checks choice is being passed from DOM', () => {
+      $scope.$digest();
+      expect(vm.player1Choice).to.equal('rock');
+    });
 
-
-
+    });
   });
-});
-//what can be tested?
-//rock beats scissors
